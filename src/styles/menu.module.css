@@ -1,0 +1,98 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Telegraf-Regular';
+    src: url(../../assets/fonts/PPTelegraf-Regular.woff2) format('woff2');
+    src: url(../../assets/fonts/PPTelegraf-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Telegraf-Ultralight';
+    src: url(../../assets/fonts/PPTelegraf-UltraLight.woff2) format('woff2');
+    src: url(../../assets/fonts/PPTelegraf-UltraLight.woff) format('woff');
+}
+
+:root {
+    --dark: #0F0E0E;
+    --light: #FFFFF0;
+    --inactive: rgba(255, 255, 240, .5)
+}
+
+.menu {
+    width: 100vw;
+    height: auto;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: var(--dark);
+    z-index: 99;
+}
+
+.marquee {
+    display: flex;
+    justify-content: center;
+    overflow-x: scroll;
+    border-bottom: solid 1px var(--light);
+    padding: 1vh 0vw;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.ticker1, .ticker2 {
+    font-family: 'Telegraf-Ultralight';
+    color: var(--light);
+    font-size: 4vw; 
+}
+
+.ticker {
+    font-family: 'Telegraf-Ultralight';
+    color: var(--light);
+    font-size: 4vw; 
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5vh 2.5vw;
+    border-bottom: solid 1px var(--light);
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family: 'Telegraf-Regular';
+    color: var(--inactive);
+    font-size: 6vw;
+}
+
+.active {
+    color: var(--light);
+}
+
+@media screen and (min-width: 750px) {
+    .menu {
+
+    }
+
+    .marquee {
+
+    }
+    
+    .ticker1, .ticker2 {
+        font-size: 1.5vw;
+    }
+
+    .ticker {
+        font-size: 1.5vw;
+    }
+    
+    .nav {
+    
+    }
+    
+    .nav-link {
+        font-size: 3vw;
+    }
+}

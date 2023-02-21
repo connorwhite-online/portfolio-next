@@ -1,0 +1,185 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Telegraf-Regular';
+    src: url(../../assets/fonts/PPTelegraf-Regular.woff2) format('woff2');
+    src: url(../../assets/fonts/PPTelegraf-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Telegraf-Ultralight';
+    src: url(../../assets/fonts/PPTelegraf-UltraLight.woff2) format('woff2');
+    src: url(../../assets/fonts/PPTelegraf-UltraLight.woff) format('woff');
+}
+
+:root {
+    --dark: #0F0E0E;
+    --light: #FFFFF0;
+    --button: rgba(255, 255, 240, .25)
+}
+
+.work::-webkit-scrollbar {
+    display: none;  
+}
+
+.case {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    border-bottom: solid 1px var(--light);
+    z-index: 10;
+}
+
+.count {
+    font-family: 'Telegraf-Ultralight';
+    font-size: 7.5vw;
+    color: var(--light);
+    padding: 2.5vh 2.5vw;
+    border-right: solid 1px var(--light);
+}
+
+.title {
+    font-family: 'Telegraf-Ultralight';
+    font-size: 7.5vw;
+    color: var(--light);
+    padding: 2.5vh 2.5vw;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery {
+    order: 1;
+    width: 100vw;
+    height: 30vh;
+    border-bottom: solid 1px var(--light);
+    position: relative;
+    z-index: 1;
+}
+
+.images {
+    height: 100%;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.images::-webkit-scrollbar {
+    display: none;  
+}
+
+.gallery-img {
+    height: 30vh;
+    width: auto;
+    scroll-snap-align: start;
+}
+
+.details {
+    order: 2;
+    width: 95vw;
+    padding: 2.5vh 2.5vw;
+    border-bottom: solid 1px var(--light);
+    border-right: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    padding-bottom: 2.5vh;
+}
+
+.tag {
+    color: var(--light);
+    font-family: 'Telegraf-Regular';
+    font-size: 4.5vw;
+    padding: .75vh 2.5vw;
+    background-color: var(--button);
+    border-radius: 25px;
+}
+
+.copy {
+    color: var(--light);
+    font-family: 'Telegraf-Regular';
+    font-size: 4.5vw;
+    padding-bottom: 1vh;
+}
+
+a.link {
+    text-decoration: none;
+    color: var(--light);
+    font-family: 'Telegraf-Ultralight';
+    font-size: 4.5vw;
+}
+
+
+
+@media screen and (min-width: 750px) {
+    .count {
+        font-size: 4vw;
+        padding: 2.5vh 2.5vw;
+    }
+    
+    .title {
+        font-size: 4vw;
+        padding: 2.5vh 2.5vw;
+    }
+    
+    .content {
+        flex-direction: row;
+        border-bottom: solid 1px var(--light);
+    }
+
+    .gallery {
+        order: 2;
+        width: 70vw;
+        height: 50vh;
+        border-bottom: none;
+    }
+    
+    .images {
+        height: 100%;
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: mandatory;
+    }
+
+    .gallery-img {
+        height: 50vh;
+        width: auto;
+    }
+
+    .details {
+        order: 1;
+        width: 25vw;
+        border-bottom: none;
+        border-right: solid 1px var(--light);
+    }
+    
+    .tags {
+        gap: .5vw;
+    }
+    
+    .tag {
+        font-size: 1.5vw;
+        padding: .5vh 1vw;
+    }
+    
+    .copy {
+        font-size: 1.5vw;
+    }
+    
+    div a.link {
+        font-size: 1.5vw;
+    }
+}
