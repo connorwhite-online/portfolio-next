@@ -4,11 +4,6 @@ import Image from 'next/image';
 
 function Work () {
 
-    const imageStyle = {
-        height: '100%',
-        width: 'inherit',
-    };
-
     const [Projects] = useState([
         {
             name: 'JESS FORD CARE',
