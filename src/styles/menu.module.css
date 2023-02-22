@@ -1,24 +1,13 @@
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
 @font-face {
     font-family: 'Telegraf-Regular';
-    src: url(../../assets/fonts/PPTelegraf-Regular.woff2) format('woff2');
-    src: url(../../assets/fonts/PPTelegraf-Regular.woff) format('woff');
+    src: url(../fonts/PPTelegraf-Regular.woff2) format('woff2');
+    src: url(../fonts/PPTelegraf-Regular.woff) format('woff');
 }
 
 @font-face {
     font-family: 'Telegraf-Ultralight';
-    src: url(../../assets/fonts/PPTelegraf-UltraLight.woff2) format('woff2');
-    src: url(../../assets/fonts/PPTelegraf-UltraLight.woff) format('woff');
-}
-
-:root {
-    --dark: #0F0E0E;
-    --light: #FFFFF0;
-    --inactive: rgba(255, 255, 240, .5)
+    src: url(../fonts/PPTelegraf-UltraLight.woff2) format('woff2');
+    src: url(../fonts/PPTelegraf-UltraLight.woff) format('woff');
 }
 
 .menu {
@@ -27,7 +16,7 @@ html, body {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background-color: var(--dark);
+    background-color: #0F0E0E;
     z-index: 99;
 }
 
@@ -35,7 +24,7 @@ html, body {
     display: flex;
     justify-content: center;
     overflow-x: scroll;
-    border-bottom: solid 1px var(--light);
+    border-bottom: solid 1px #FFFFF0;
     padding: 1vh 0vw;
     white-space: nowrap;
     overflow: hidden;
@@ -43,13 +32,13 @@ html, body {
 
 .ticker1, .ticker2 {
     font-family: 'Telegraf-Ultralight';
-    color: var(--light);
+    color: #FFFFF0;
     font-size: 4vw; 
 }
 
 .ticker {
     font-family: 'Telegraf-Ultralight';
-    color: var(--light);
+    color: #FFFFF0;
     font-size: 4vw; 
 }
 
@@ -57,18 +46,18 @@ html, body {
     display: flex;
     justify-content: space-between;
     padding: 2.5vh 2.5vw;
-    border-bottom: solid 1px var(--light);
+    border-bottom: solid 1px #FFFFF0;
 }
 
-.nav-link {
+.navLink {
     text-decoration: none;
     font-family: 'Telegraf-Regular';
-    color: var(--inactive);
+    color: rgba(255, 255, 240, .5);
     font-size: 6vw;
 }
 
 .active {
-    color: var(--light);
+    color: #FFFFF0;
 }
 
 @media screen and (min-width: 750px) {
@@ -92,7 +81,7 @@ html, body {
     
     }
     
-    .nav-link {
+    .navLink {
         font-size: 3vw;
     }
 }

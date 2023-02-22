@@ -1,7 +1,13 @@
+import { useState } from 'react';
 import styles from '@/styles/work.module.css'
 import Image from 'next/image';
 
 function Work () {
+
+    const imageStyle = {
+        height: '100%',
+        width: 'inherit',
+    };
 
     const [Projects] = useState([
         {
@@ -53,14 +59,14 @@ function Work () {
             {Projects.map((project, index) => (
                     <div className={styles.case} key={index}>
                         <div className={styles.header}>
-                            <div className={styles.header}>0{index +1}</div>
+                            <div className={styles.count}>0{index +1}</div>
                             <div className={styles.title}>{project.name}</div>
                         </div>
                         <div className={styles.content}>
                             <div className={styles.gallery}>
                                 <div className={styles.images}>
                                     {project.images.map((img, i) => (
-                                        <Image className={styles.galler-img} src={'./images/' + img} key={i} alt={project.name + ' ' + i}></Image>
+                                        <Image className={styles.galleryImg} src={'/images/' + img} key={i} alt={project.name + ' ' + i} width={600} height={800} ></Image>
                                     ))}
                                 </div> 
                             </div>

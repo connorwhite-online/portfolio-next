@@ -1,24 +1,13 @@
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
 @font-face {
     font-family: 'Telegraf-Regular';
-    src: url(../../assets/fonts/PPTelegraf-Regular.woff2) format('woff2');
-    src: url(../../assets/fonts/PPTelegraf-Regular.woff) format('woff');
+    src: url(../fonts/PPTelegraf-Regular.woff2) format('woff2');
+    src: url(../fonts/PPTelegraf-Regular.woff) format('woff');
 }
 
 @font-face {
     font-family: 'Telegraf-Ultralight';
-    src: url(../../assets/fonts/PPTelegraf-UltraLight.woff2) format('woff2');
-    src: url(../../assets/fonts/PPTelegraf-UltraLight.woff) format('woff');
-}
-
-:root {
-    --dark: #0F0E0E;
-    --light: #FFFFF0;
-    --button: rgba(255, 255, 240, .25)
+    src: url(../fonts/PPTelegraf-UltraLight.woff2) format('woff2');
+    src: url(../fonts/PPTelegraf-UltraLight.woff) format('woff');
 }
 
 .work::-webkit-scrollbar {
@@ -32,22 +21,22 @@ html, body {
 
 .header {
     display: flex;
-    border-bottom: solid 1px var(--light);
+    border-bottom: solid 1px #FFFFF0;
     z-index: 10;
 }
 
 .count {
     font-family: 'Telegraf-Ultralight';
     font-size: 7.5vw;
-    color: var(--light);
+    color: #FFFFF0;
     padding: 2.5vh 2.5vw;
-    border-right: solid 1px var(--light);
+    border-right: solid 1px #FFFFF0;
 }
 
 .title {
     font-family: 'Telegraf-Ultralight';
     font-size: 7.5vw;
-    color: var(--light);
+    color: #FFFFF0;
     padding: 2.5vh 2.5vw;
 }
 
@@ -60,7 +49,7 @@ html, body {
     order: 1;
     width: 100vw;
     height: 30vh;
-    border-bottom: solid 1px var(--light);
+    border-bottom: solid 1px #FFFFF0;
     position: relative;
     z-index: 1;
 }
@@ -76,7 +65,7 @@ html, body {
     display: none;  
 }
 
-.gallery-img {
+.galleryImg {
     height: 30vh;
     width: auto;
     scroll-snap-align: start;
@@ -86,7 +75,7 @@ html, body {
     order: 2;
     width: 95vw;
     padding: 2.5vh 2.5vw;
-    border-bottom: solid 1px var(--light);
+    border-bottom: solid 1px #FFFFF0;
     border-right: none;
     display: flex;
     flex-direction: column;
@@ -100,16 +89,16 @@ html, body {
 }
 
 .tag {
-    color: var(--light);
+    color: #FFFFF0;
     font-family: 'Telegraf-Regular';
     font-size: 4.5vw;
     padding: .75vh 2.5vw;
-    background-color: var(--button);
+    background-color: rgba(255, 255, 240, .25);
     border-radius: 25px;
 }
 
 .copy {
-    color: var(--light);
+    color: #FFFFF0;
     font-family: 'Telegraf-Regular';
     font-size: 4.5vw;
     padding-bottom: 1vh;
@@ -117,7 +106,7 @@ html, body {
 
 a.link {
     text-decoration: none;
-    color: var(--light);
+    color: #FFFFF0;
     font-family: 'Telegraf-Ultralight';
     font-size: 4.5vw;
 }
@@ -137,7 +126,7 @@ a.link {
     
     .content {
         flex-direction: row;
-        border-bottom: solid 1px var(--light);
+        border-bottom: solid 1px #FFFFF0;
     }
 
     .gallery {
@@ -154,7 +143,7 @@ a.link {
         scroll-snap-type: mandatory;
     }
 
-    .gallery-img {
+    .galleryImg {
         height: 50vh;
         width: auto;
     }
@@ -163,7 +152,7 @@ a.link {
         order: 1;
         width: 25vw;
         border-bottom: none;
-        border-right: solid 1px var(--light);
+        border-right: solid 1px #FFFFF0;
     }
     
     .tags {
