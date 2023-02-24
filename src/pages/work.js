@@ -61,7 +61,7 @@ function Work () {
                             <div className={styles.gallery}>
                                 <div className={styles.images}>
                                     {project.images.map((img, i) => (
-                                        <Image className={styles.galleryImg} src={'/images/' + img} key={i} alt={project.name + ' ' + i} width={600} height={800} ></Image>
+                                        <Image className={styles.galleryImg} src={'/images/' + img} key={i} alt={project.name + ' ' + i} width={500} height={300} sizes="(max-width: 749px) 300px,(min-width: 750px) 600px, (min-width: 1000px) 900px,"></Image>
                                     ))}
                                 </div> 
                             </div>

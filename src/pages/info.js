@@ -1,5 +1,7 @@
 import styles from '@/styles/info.module.css';
 
+import Menu from './menu';
+
 function Info () {
 
     return (

@@ -56,6 +56,10 @@
     font-size: 6vw;
 }
 
+.navLinkActive {
+    color: #FFFFF0;
+}
+
 .active {
     color: #FFFFF0;
 }

@@ -4,6 +4,12 @@
     src: url(../fonts/PPTelegraf-Regular.woff) format('woff');
 }
 
+.info {
+    background-color: #0F0E0E;
+    width: 100vw;
+    height: 100vh;
+}
+
 @font-face {
     font-family: 'Telegraf-Ultralight';
     src: url(../fonts/PPTelegraf-UltraLight.woff2) format('woff2');
@@ -44,7 +50,7 @@
 @media screen and (min-width: 750px) {
     .bio {
         padding: 10vh 2.5vw;
-        border-bottom: none;
+        /* border-bottom: none; */
         font-size: 2.5vw;
     }
     
@@ -55,7 +61,7 @@
     .linkBox {
         padding: 2.5vh 2.5vw;
         justify-content: center;
-        border-bottom: none;
+        /* border-bottom: none; */
     }
     
     .linkout {

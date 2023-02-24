@@ -10,6 +10,11 @@
     src: url(../fonts/PPTelegraf-UltraLight.woff) format('woff');
 }
 
+@font-face {
+    font-family: 'NeueBit-Bold';
+    src: url(../fonts/PPNeueBit-Bold.woff2) format('woff2');
+}
+
 .work::-webkit-scrollbar {
     display: none;  
 }
@@ -56,6 +61,7 @@
 
 .images {
     height: 100%;
+    width: auto;
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -84,24 +90,22 @@
 .tags {
     display: flex;
     flex-direction: row;
-    gap: 1vw;
+    gap: 2.5vw;
     padding-bottom: 2.5vh;
 }
 
 .tag {
     color: #FFFFF0;
-    font-family: 'Telegraf-Regular';
-    font-size: 4.5vw;
-    padding: .75vh 2.5vw;
-    background-color: rgba(255, 255, 240, .25);
-    border-radius: 25px;
+    font-family: 'NeueBit-Bold';
+    font-size: 5vw;
+    
 }
 
 .copy {
     color: #FFFFF0;
     font-family: 'Telegraf-Regular';
     font-size: 4.5vw;
-    padding-bottom: 1vh;
+    padding-bottom: 2vh;
 }
 
 a.link {
@@ -109,6 +113,13 @@ a.link {
     color: #FFFFF0;
     font-family: 'Telegraf-Ultralight';
     font-size: 4.5vw;
+    background-color: rgba(255, 255, 240, .25);
+    border-radius: 15px;
+    padding: 1vh 2vw;
+}
+
+a.link:hover {
+    box-shadow: 0 0 10px 1px rgba(255, 255, 240, .5);
 }
 
 
@@ -156,19 +167,18 @@ a.link {
     }
     
     .tags {
-        gap: .5vw;
+        gap: 1vw;
     }
     
     .tag {
-        font-size: 1.5vw;
-        padding: .5vh 1vw;
+        font-size: 2vw;
     }
     
     .copy {
         font-size: 1.5vw;
     }
     
-    div a.link {
+    a.link {
         font-size: 1.5vw;
     }
 }

@@ -1,9 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 
 // Component imports
-import Menu from './menu'
 import Work from './work'
 import Info from './info'
 
@@ -18,7 +16,6 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Work />
-        <Info />
       </main>
     </>
   )
